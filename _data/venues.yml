@@ -1,0 +1,23 @@
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
+
+"ACL Findings":
+  url: https://aclanthology.org/
+  color: "#00369f"
+
+"CVPR":
+  url: https://openaccess.thecvf.com/
+  color: "#009f36"
+
+"ICML":
+  url: https://icml.cc/
+  color: "#7b1fa2"
+
+"ICWS":
+  url: https://conferences.computer.org/icws/
+  color: "#ff8f00"
+
+"JSA":
+  url: https://www.sciencedirect.com/journal/journal-of-systems-architecture
+  color: "#455a64"
