@@ -24,8 +24,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Xu Guo, a third-year PhD student at Fudan University working on artificial intelligence, large language models, reasoning, multimodal learning, and computer vision.
+I am Xu Guo, a third-year PhD student at Fudan University working on large language models and artificial intelligence.
 
-My recent research focuses on robust language model pre-training, reinforcement learning with verifiable rewards, instruction following, and reasoning-oriented evaluation and training. I also collaborate on projects in OCR, multi-object tracking, vision model robustness, diffusion language models, and distributed systems.
+My primary research focuses on language model training, especially pre-training, post-training data synthesis, and agentic training. My recent first-author work explores robust pre-pre-training under noisy data, data and reward design for reinforcement learning with verifiable rewards, and instruction-following post-training.
 
 This page collects my publications and research updates. For the full publication list and citation metrics, please see my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=XFs39mgAAAAJ). You can reach me at [guox24@m.fudan.edu.cn](mailto:guox24@m.fudan.edu.cn).
