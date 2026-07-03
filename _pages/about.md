@@ -6,7 +6,7 @@ subtitle: Third-year PhD student at Fudan University · Artificial Intelligence
 
 profile:
   align: right
-  image:
+  image: guoxu-chuanxi.jpg
   image_circular: false # crops the image to make it circular
   more_info:
 
@@ -26,6 +26,6 @@ latest_posts:
 
 I am Xu Guo, a third-year PhD student at Fudan University working on large language models and artificial intelligence.
 
-My primary research focuses on language model training, especially pre-training, post-training data synthesis, and agentic training. My recent first-author work explores robust pre-pre-training under noisy data, data and reward design for reinforcement learning with verifiable rewards, and instruction-following post-training.
+I believe that training data, including synthetic data, is a fundamental driver of modern AI systems. My research focuses on data-centric methods for language model training, spanning pre-training, post-training data synthesis, and agentic training. My recent first-author work explores robust pre-pre-training under noisy data, data and reward design for reinforcement learning with verifiable rewards, and instruction-following post-training.
 
 This page collects my publications and research updates. For the full publication list and citation metrics, please see my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=XFs39mgAAAAJ). You can reach me at [guox24@m.fudan.edu.cn](mailto:guox24@m.fudan.edu.cn).
