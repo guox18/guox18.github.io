@@ -2,7 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: Third-year PhD student at Fudan University · Artificial Intelligence
+description: >-
+  Official academic homepage of Xu Guo (郭旭), a third-year PhD student at the School of Computer Science,
+  Fudan University, researching large language models, data-centric AI, post-training, and AI agents.
+keywords: Xu Guo, 郭旭, Fudan University, School of Computer Science, large language models, data-centric AI, post-training, reinforcement learning, AI agents
+subtitle: PhD Student · School of Computer Science, Fudan University · Large Language Models and Data-Centric AI
+last_modified_at: 2026-07-26
 
 profile:
   align: right
@@ -24,8 +29,45 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Xu Guo, a third-year PhD student at Fudan University working on large language models and artificial intelligence.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "https://guox18.github.io/",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://guox18.github.io/#xu-guo",
+    "name": "Xu Guo",
+    "alternateName": "郭旭",
+    "url": "https://guox18.github.io/",
+    "image": "https://guox18.github.io/assets/img/guoxu-chuanxi.jpg",
+    "jobTitle": "PhD Student",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Fudan University",
+      "url": "https://www.fudan.edu.cn/en/"
+    },
+    "description": "PhD student at the School of Computer Science, Fudan University, researching large language models, data-centric AI, post-training, reinforcement learning, and AI agents.",
+    "knowsAbout": [
+      "Large Language Models",
+      "Data-Centric Artificial Intelligence",
+      "Pre-Training",
+      "Post-Training",
+      "Reinforcement Learning with Verifiable Rewards",
+      "AI Agents"
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=XFs39mgAAAAJ",
+      "https://dblp.org/pid/46/5508-4",
+      "https://orcid.org/0000-0002-6510-8579",
+      "https://github.com/guox18"
+    ]
+  }
+}
+</script>
+
+I am **Xu Guo (郭旭)**, a third-year PhD student at the **School of Computer Science, Fudan University**, working on large language models and data-centric artificial intelligence.
 
 I believe that training data, including synthetic data, is a fundamental driver of modern AI systems. My research focuses on data-centric methods for language model training, spanning pre-training, post-training data synthesis, and agentic training. My recent first-author work explores robust pre-pre-training under noisy data, data and reward design for reinforcement learning with verifiable rewards, and instruction-following post-training.
 
-This page collects my publications and research updates. For the full publication list and citation metrics, please see my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=XFs39mgAAAAJ). You can reach me at [guox24@m.fudan.edu.cn](mailto:guox24@m.fudan.edu.cn).
+This official academic homepage collects my publications and research updates. You can also find my work on [Google Scholar](https://scholar.google.com/citations?user=XFs39mgAAAAJ), [DBLP](https://dblp.org/pid/46/5508-4), [ORCID](https://orcid.org/0000-0002-6510-8579), and [GitHub](https://github.com/guox18). You can reach me at [guox24@m.fudan.edu.cn](mailto:guox24@m.fudan.edu.cn).
