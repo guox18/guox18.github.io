@@ -4,7 +4,7 @@ Official academic homepage of **Xu Guo (郭旭)**, a PhD student at the School o
 
 Site: <https://guox18.github.io>
 
-Academic profiles: [Google Scholar](https://scholar.google.com/citations?user=XFs39mgAAAAJ) · [DBLP](https://dblp.org/pid/46/5508-4) · [ORCID](https://orcid.org/0000-0002-6510-8579)
+Academic profiles: [Xu Guo on Google Scholar](https://scholar.google.com/citations?user=XFs39mgAAAAJ) · [DBLP](https://dblp.org/pid/46/5508-4) · [ORCID](https://orcid.org/0000-0002-6510-8579)
 
 ## Maintenance
 
