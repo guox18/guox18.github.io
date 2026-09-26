@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, [When Does Generating More Help? Disentangling Fixed-Source Synthesis from Source Expansion in Synthetic Data Scaling](https://arxiv.org/abs/2607.01727), has been accepted to Findings of EMNLP 2026.
+Our paper, [When Does Generating More Help?](https://arxiv.org/abs/2607.01727), has been accepted to Findings of EMNLP 2026.

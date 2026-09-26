@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<div class="academic-home">
+  <section class="profile-intro" aria-labelledby="profile-name">
+    <div class="profile-copy">
+      <header>
+        <h1 id="profile-name">{{ site.first_name }} {{ site.last_name }} <span lang="zh">{{ page.chinese_name }}</span></h1>
+        <p class="profile-subtitle">{{ page.subtitle }}</p>
+      </header>
+      <div class="profile-bio">{{ content }}</div>
+    </div>
+    <aside class="profile-contact" aria-label="Photo and contact links">
+      <div class="portrait"><img src="{{ '/assets/img/guoxu-chuanxi.jpg' | relative_url }}" width="220" height="220" alt="Xu Guo outdoors" fetchpriority="high"></div>
+      <p class="affiliation">School of Computer Science<br><span>Fudan University</span></p>
+      <div class="profile-links">
+        <button class="copy-email" type="button" data-email="{{ site.data.socials.email | escape }}" aria-label="Copy email address" title="{{ site.data.socials.email | escape }}">Email</button>
+        <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" aria-label="Xu Guo's Google Scholar profile">Google Scholar</a>
+        <a href="https://github.com/{{ site.data.socials.github_username }}">GitHub</a>
+        <a href="{{ site.data.socials.dblp_url }}">DBLP</a>
+        <a href="https://orcid.org/{{ site.data.socials.orcid_id }}">ORCID</a>
+      </div>
+      <p class="email-copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </aside>
+  </section>
+
+  <section class="home-section research-interests" aria-labelledby="research-heading">
+    <h2 id="research-heading">Research interests</h2>
+    <ul>{% for interest in page.research_interests %}<li>{{ interest }}</li>{% endfor %}</ul>
+  </section>
+
+  <section class="home-section" aria-labelledby="news-heading">
+    <div class="section-heading">
+      <h2 id="news-heading">News</h2>
+      <a class="section-link" href="{{ '/news/' | relative_url }}">All updates</a>
+    </div>
+    <ul class="updates">
+      {% assign updates = site.news | sort: 'date' | reverse %}
+      {% for item in updates limit: 3 %}
+        <li>
+          <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%b %d, %Y' }}</time>
+          <div>{{ item.content | remove: '<p>' | remove: '</p>' }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="home-section" aria-labelledby="publications-heading">
+    <div class="section-heading">
+      <h2 id="publications-heading">Selected publications</h2>
+      <a class="section-link" href="{{ '/publications/' | relative_url }}">All publications</a>
+    </div>
+    {% include selected_papers.liquid %}
+  </section>
+</div>
+<script src="{{ '/assets/js/copy-email.js' | relative_url }}" defer></script>
