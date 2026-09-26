@@ -6,6 +6,10 @@
   url: https://aclanthology.org/
   color: "#00369f"
 
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#1f4e79"
+
 "CVPR":
   url: https://openaccess.thecvf.com/
   color: "#009f36"

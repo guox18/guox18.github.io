@@ -7,7 +7,7 @@ description: >-
   Fudan University, researching large language models, data-centric AI, post-training, and AI agents.
 keywords: Xu Guo, 郭旭, Fudan University, School of Computer Science, large language models, data-centric AI, post-training, reinforcement learning, AI agents
 subtitle: PhD Student · School of Computer Science, Fudan University · Large Language Models and Data-Centric AI
-last_modified_at: 2026-07-26
+last_modified_at: 2026-09-26
 
 profile:
   align: right
@@ -68,6 +68,6 @@ latest_posts:
 
 I am **Xu Guo (郭旭)**, a third-year PhD student at the **School of Computer Science, Fudan University**, working on large language models and data-centric artificial intelligence.
 
-I believe that training data, including synthetic data, is a fundamental driver of modern AI systems. My research focuses on data-centric methods for language model training, spanning pre-training, post-training data synthesis, and agentic training. My recent first-author work explores robust pre-pre-training under noisy data, data and reward design for reinforcement learning with verifiable rewards, and instruction-following post-training.
+I believe that training data, including synthetic data, is a fundamental driver of modern AI systems. My research focuses on data-centric methods for language model training, spanning pre-training, post-training data synthesis, and agentic training. My recent first-author work includes two papers accepted to NeurIPS 2026 on robust pre-pre-training under noisy data and verifiable rewards for instruction-following reinforcement learning.
 
 This official academic homepage collects my publications and research updates. You can also find my work and citation record on [Xu Guo's Google Scholar profile](https://scholar.google.com/citations?user=XFs39mgAAAAJ), with additional publication and identity records on [DBLP](https://dblp.org/pid/46/5508-4), [ORCID](https://orcid.org/0000-0002-6510-8579), and [GitHub](https://github.com/guox18). You can reach me at [guox24@m.fudan.edu.cn](mailto:guox24@m.fudan.edu.cn).
