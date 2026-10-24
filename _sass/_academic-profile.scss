@@ -211,3 +211,58 @@ footer .container { line-height: 1.8; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
+
+// Bilingual writing: a quiet reading column with an optional reference map.
+.writing-topics { display: flex; flex-wrap: wrap; gap: 8px 20px; padding-bottom: 20px; border-bottom: 1px solid var(--global-divider-color); }
+.writing-topics button { appearance: none; border: 0; border-bottom: 2px solid transparent; padding: 4px 0; background: transparent; color: var(--global-text-color-light); cursor: pointer; font: inherit; font-family: var(--academic-heading-font); }
+.writing-topics button[aria-pressed="true"] { color: var(--global-theme-color); border-bottom-color: currentColor; }
+.writing-entry { padding: 28px 0; border-bottom: 1px solid var(--global-divider-color); }
+.writing-entry[hidden], .reading-toc[hidden], .writing-empty[hidden] { display: none; }
+.writing-entry h2 { margin: 4px 0 10px; font-size: 25px; line-height: 1.4; }
+.writing-entry p { margin-bottom: 10px; }
+.writing-empty { padding: 28px 0; color: var(--global-text-color-light); }
+.reading-header { margin-bottom: 34px; }
+.reading-back { font-family: var(--academic-heading-font); font-size: 14px; }
+.reading-meta { color: var(--global-text-color-light); font-family: var(--academic-heading-font); font-size: 13px; margin: 18px 0 8px; }
+.reading-header h1 { max-width: 24em; font-size: clamp(27px, 4vw, 38px); line-height: 1.3; margin: 0 0 16px; }
+.reading-description { color: var(--global-text-color-light); max-width: 42em; }
+.reading-languages { display: flex; flex-wrap: wrap; gap: 18px; font-family: var(--academic-heading-font); font-size: 14px; }
+.reading-languages a[aria-current="page"] { color: var(--global-text-color); font-weight: 600; text-decoration: underline; text-underline-offset: 5px; }
+.reading-grid { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 38px; align-items: start; }
+.reading-content { min-width: 0; overflow-wrap: anywhere; font-size: 17px; line-height: 1.9; }
+.reading-content > :first-child { margin-top: 0; }
+.reading-content h2 { margin: 38px 0 18px; font-size: 27px; line-height: 1.4; scroll-margin-top: 90px; }
+.reading-content h3 { margin: 26px 0 12px; font-size: 21px; line-height: 1.45; scroll-margin-top: 90px; }
+.reading-content p, .reading-content ul, .reading-content ol { margin-bottom: 20px; }
+.reading-content blockquote { margin: 24px 0; padding: 6px 0 6px 20px; border-left: 3px solid var(--global-theme-color); color: var(--global-text-color-light); font-style: normal; }
+.reading-content blockquote p:last-child { margin-bottom: 0; }
+.reading-content pre { max-width: 100%; overflow-x: auto; padding: 18px; font-size: 13px; line-height: 1.7; }
+.reading-content pre code { white-space: pre; overflow-wrap: normal; }
+.reading-content table { display: block; max-width: 100%; overflow-x: auto; margin: 24px 0; font-size: 15px; }
+.reading-content th, .reading-content td { padding: 10px 14px; border-bottom: 1px solid var(--global-divider-color); text-align: left; min-width: 100px; }
+.reading-toc { position: sticky; top: 85px; font-family: var(--academic-heading-font); font-size: 13px; line-height: 1.6; max-height: calc(100vh - 110px); overflow-y: auto; }
+.reading-toc summary { cursor: pointer; font-weight: 600; padding-bottom: 12px; }
+.reading-toc-list { padding: 0; margin: 0; list-style: none; border-left: 1px solid var(--global-divider-color); }
+.reading-toc-list li { padding: 5px 0 5px 13px; }
+.reading-toc-list .toc-subheading { padding-left: 25px; }
+.reading-toc-list a { color: var(--global-text-color-light); }
+.reading-toc-list a:hover { color: var(--global-theme-color); }
+.article-graph { margin-top: 45px; padding-top: 20px; border-top: 1px solid var(--global-divider-color); }
+.article-graph > summary { cursor: pointer; font-family: var(--academic-heading-font); font-size: 19px; font-weight: 600; }
+.graph-intro, .graph-status { color: var(--global-text-color-light); font-size: 14px; margin-top: 15px; }
+.graph-canvas { overflow-x: auto; }
+.graph-canvas svg { display: block; width: 100%; min-width: 540px; height: auto; color: var(--global-text-color-light); }
+.graph-edge { stroke: var(--global-text-color-light); stroke-width: 1.4; }
+.graph-node rect { fill: var(--global-bg-color); stroke: var(--global-divider-color); stroke-width: 1.5; }
+.graph-node text { fill: var(--global-text-color); font: 14px var(--academic-heading-font); }
+.graph-node:hover rect, .graph-node:focus rect, .graph-current rect { stroke: var(--global-theme-color); stroke-width: 2; }
+.graph-links { display: flex; flex-wrap: wrap; gap: 0 30px; align-items: baseline; font-size: 14px; }
+.graph-links h3 { font-size: 15px; margin: 12px 0; }
+.graph-links ul { padding-left: 20px; margin: 0; }
+@media (max-width: 899px) {
+  .reading-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .reading-toc { position: static; max-height: none; border-block: 1px solid var(--global-divider-color); padding: 12px 0; }
+  .reading-toc summary { padding-bottom: 0; }
+  .reading-toc details[open] summary { padding-bottom: 12px; }
+  .reading-content { font-size: 16px; }
+}
