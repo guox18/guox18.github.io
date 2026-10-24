@@ -35,4 +35,4 @@ nav_order: 2
   </div>
   <p class="writing-empty" role="status" hidden>这个分类还没有文章。 / No articles in this topic yet.</p>
 </div>
-<script src="{{ '/assets/js/blog-reading.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/blog-reading.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
