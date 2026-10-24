@@ -9,7 +9,7 @@ layout: default
     <h1>{{ page.title | escape }}</h1>
     <p class="reading-description">{{ page.description | escape }}</p>
     <nav class="reading-languages" aria-label="{% if is_zh %}文章语言{% else %}Article language{% endif %}">
-      {% assign translations = site.posts | where: 'translation_key', page.translation_key | sort: 'lang' %}
+      {% assign translations = site.posts | where: 'translation_key', page.translation_key | sort: 'lang' | reverse %}
       {% for version in translations %}
       <a href="{{ version.url | relative_url }}" lang="{{ version.lang }}" hreflang="{{ version.lang }}"{% if version.url == page.url %} aria-current="page"{% endif %}>{% if version.lang == 'zh-CN' %}中文{% else %}English{% endif %}</a>
       {% endfor %}

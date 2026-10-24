@@ -25,7 +25,7 @@ nav_order: 2
       <h2><a href="{{ entry.url | relative_url }}" lang="{{ entry.lang }}">{{ entry.title | escape }}</a></h2>
       <p>{{ entry.description | escape }}</p>
       <nav class="reading-languages" aria-label="文章语言 / Article language">
-        {% assign versions = group.items | sort: 'lang' %}
+        {% assign versions = group.items | sort: 'lang' | reverse %}
         {% for version in versions %}
         <a href="{{ version.url | relative_url }}" lang="{{ version.lang }}" hreflang="{{ version.lang }}">{% if version.lang == 'zh-CN' %}中文{% else %}English{% endif %}</a>
         {% endfor %}
