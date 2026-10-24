@@ -104,16 +104,45 @@
         const offset = from === current ? -5 : 5;
         svg.append(make('line', { x1: x1 + direction * 115, y1: y1 + offset, x2: x2 - direction * 120, y2: y2 + offset, 'marker-end': 'url(#article-arrow)', class: 'graph-edge' }));
       });
+      graph.querySelector('.graph-canvas').replaceChildren(svg);
+      await document.fonts.ready;
+      const measure = document.createElement('canvas').getContext('2d');
       visible.forEach(url => {
         const post = nodes.get(url); if (!post) return;
         const [x, y] = positions.get(url); const link = make('a', { href: post.url, 'aria-label': post.title, class: url === current ? 'graph-node graph-current' : 'graph-node' });
         if (url === current) link.setAttribute('aria-current', 'page');
         const title = make('title'); title.textContent = post.title; link.append(title);
         link.append(make('rect', { x: x - 112, y: y - 24, width: 224, height: 48, rx: 5 }));
-        const text = make('text', { x, y: y + 5, 'text-anchor': 'middle' });
-        const letters = [...post.title];
-        text.textContent = letters.length > 20 ? letters.slice(0, 19).join('') + '…' : post.title;
+        const text = make('text', { x, 'text-anchor': 'middle' });
         link.append(text); svg.append(link);
+        // Measure the actual rendered font: a Chinese glyph and a Latin letter
+        // have different widths, so a character-count limit cannot fit the box.
+        const style = getComputedStyle(text);
+        measure.font = `${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
+        const maxWidth = 192; // 16px padding on either side of the 224px node.
+        const lines = [];
+        let remaining = post.title.trim();
+        while (remaining && lines.length < 2) {
+          if (measure.measureText(remaining).width <= maxWidth) {
+            lines.push(remaining); break;
+          }
+          const letters = [...remaining];
+          if (lines.length === 1) {
+            while (letters.length && measure.measureText(letters.join('') + '…').width > maxWidth) letters.pop();
+            lines.push(letters.join('').trimEnd() + '…'); break;
+          }
+          let count = 0;
+          while (count < letters.length && measure.measureText(letters.slice(0, count + 1).join('')).width <= maxWidth) count++;
+          count = Math.max(count, 1);
+          const wordBreak = letters.slice(0, count + 1).lastIndexOf(' ');
+          if (wordBreak > 0) count = wordBreak;
+          lines.push(letters.slice(0, count).join('').trimEnd());
+          remaining = letters.slice(count).join('').trimStart();
+        }
+        lines.forEach((line, i) => {
+          const span = make('tspan', { x, y: y + (lines.length === 1 ? 5 : -4 + i * 17) });
+          span.textContent = line; text.append(span);
+        });
       });
       graph.querySelector('.graph-canvas').replaceChildren(svg);
       status.textContent = neighbors.length > 6 ? (zh ? '图中显示前 6 篇，完整引用见下方列表。' : 'The map shows six neighbors. All references are listed below.') : '';
