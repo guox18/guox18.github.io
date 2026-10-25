@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, [Rethinking Multiple-Choice Questions for RLVR: Unlocking Potential via Distractor Design](https://aclanthology.org/2026.findings-acl.1003/), is published in Findings of ACL 2026.
+Our paper, [Rethinking Multiple-Choice Questions for RLVR](https://aclanthology.org/2026.findings-acl.1003/), is published in Findings of ACL 2026.
