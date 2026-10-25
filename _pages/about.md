@@ -52,6 +52,6 @@ research_interests:
 
 I am a third-year Ph.D. student at **Fudan University**, jointly trained at **Shanghai Innovation Institute (SII)**. I am advised by Qipeng Guo and Xipeng Qiu.
 
-My research focuses on **training data for language models and AI agents**. I study how data synthesis and training feedback can improve learning, from robust pre-training to instruction following and reinforcement learning with verifiable rewards. I am also exploring task and trajectory synthesis for coding and terminal agents.
+My research focuses on **training data for language models and AI agents**. I study data synthesis for pre-training and post-training. My current interests include leveraging user–agent interaction traces for agent training and mid-training for vision-language models (VLMs).
 
 Since 2024, I have been a research intern at **Shanghai AI Laboratory**, contributing to training data for the InternLM series, including knowledge-focused data, instruction following, and agent trajectories.
