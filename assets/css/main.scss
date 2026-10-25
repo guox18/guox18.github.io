@@ -32,5 +32,6 @@
 @use "teachings";
 @use "typograms";
 
-// Intentional site override; append our academic profile styles last.
+// Academic profile styles include the pre-cropped portrait without CSS zoom.
+// Update this entry point when partials change so the theme refreshes its CSS cache key.
 @use "academic-profile";
