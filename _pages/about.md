@@ -3,10 +3,10 @@ layout: academic-home
 title: About
 permalink: /
 description: >-
-  Official academic homepage of Xu Guo (郭旭), a third-year PhD student at the School of Computer Science,
-  Fudan University, researching large language models, data-centric AI, post-training, and AI agents.
-keywords: Xu Guo, 郭旭, Fudan University, School of Computer Science, large language models, data-centric AI, post-training, reinforcement learning, AI agents
-subtitle: Ph.D. student, Fudan University
+  Official academic homepage of Xu Guo (郭旭), a third-year PhD student at Fudan University,
+  jointly trained at Shanghai Innovation Institute, researching large language models, data-centric AI, post-training, and AI agents.
+keywords: Xu Guo, 郭旭, Fudan University, Shanghai Innovation Institute, large language models, data-centric AI, post-training, reinforcement learning, AI agents
+subtitle: Ph.D. student · Fudan University & Shanghai Innovation Institute
 last_modified_at: 2026-09-26
 
 chinese_name: 郭旭
@@ -28,12 +28,11 @@ research_interests:
     "url": "https://guox18.github.io/",
     "image": "https://guox18.github.io/assets/img/guoxu-chuanxi.jpg",
     "jobTitle": "PhD Student",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "Fudan University",
-      "url": "https://www.fudan.edu.cn/en/"
-    },
-    "description": "PhD student at the School of Computer Science, Fudan University, researching large language models, data-centric AI, post-training, reinforcement learning, and AI agents.",
+    "affiliation": [
+      {"@type": "CollegeOrUniversity", "name": "Fudan University", "url": "https://www.fudan.edu.cn/en/"},
+      {"@type": "EducationalOrganization", "name": "Shanghai Innovation Institute", "url": "https://www.sii.edu.cn/"}
+    ],
+    "description": "PhD student at Fudan University, jointly trained at Shanghai Innovation Institute, researching large language models, data-centric AI, post-training, reinforcement learning, and AI agents.",
     "knowsAbout": [
       "Large Language Models",
       "Data-Centric Artificial Intelligence",
@@ -52,7 +51,7 @@ research_interests:
 }
 </script>
 
-I am a third-year Ph.D. student at the **School of Computer Science, Fudan University**, advised by Qipeng Guo and Xipeng Qiu.
+I am a third-year Ph.D. student at **Fudan University**, jointly trained at **Shanghai Innovation Institute (SII)**. I am advised by Qipeng Guo and Xipeng Qiu.
 
 My research focuses on **training data for language models and AI agents**. I study how data synthesis and training feedback can improve learning, from robust pre-training to instruction following and reinforcement learning with verifiable rewards. I am also exploring task and trajectory synthesis for coding and terminal agents.
 
