@@ -9,9 +9,6 @@ keywords: Xu Guo, 郭旭, Fudan University, Shanghai Innovation Institute, large
 last_modified_at: 2026-09-26
 
 chinese_name: 郭旭
-research_interests:
-  - Synthetic Data for Pre-training, Post-training, and AI Agents
-  - Reinforcement Learning with Verifiable Rewards
 ---
 
 <script type="application/ld+json">
