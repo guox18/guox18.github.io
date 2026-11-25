@@ -6,7 +6,7 @@ description: >-
   Official academic homepage of Xu Guo (郭旭), a third-year PhD student at Fudan University,
   jointly trained at Shanghai Innovation Institute, researching large language models, data-centric AI, post-training, and AI agents.
 keywords: Xu Guo, 郭旭, Fudan University, Shanghai Innovation Institute, large language models, data-centric AI, post-training, reinforcement learning, AI agents
-last_modified_at: 2026-11-25
+last_modified_at: 2026-09-26
 
 chinese_name: 郭旭
 ---
@@ -48,8 +48,6 @@ chinese_name: 郭旭
 </script>
 
 I am a third-year Ph.D. student at **Fudan University**, jointly trained at **Shanghai Innovation Institute (SII)**. I am advised by Qipeng Guo and Xipeng Qiu.
-
-Since late October 2026, I have been a research intern at **Tencent Hunyuan** through the **Qingyun Program (青云计划)**, focusing on **synthetic data for mid-training**.
 
 Since 2024, I have been a research intern at **Shanghai AI Laboratory**, contributing to training data for the InternLM series, including knowledge-focused data, instruction following, and agent trajectories.
 
